@@ -1,0 +1,27 @@
+<div class="container">
+  <div  class="main card">
+    <div class="main_2">
+      <!-- <div  *ngFor="let item of products.images">
+        <img (mouseenter)="changeImg(item)" width="100" height="100" [src]="item.url">
+      </div> -->
+    </div>
+    <div >
+      <img (mouseenter)="Hover()" (mouseleave)="HoverEnd()"   width="400" height="400" [src]="MainImage.url">
+      <div class="text-center pb-4">
+        <span><button (click)="addToCart(products)" class="btn btn-primary">Add to cart</button></span>
+        <span><button class="btn btn-secondary ms-2">Buy Now</button></span>
+      </div>
+    </div>
+    <div class="main_3 card">
+      <div *ngIf="!ImageHover">
+        <h2>{{products.name}}</h2>
+        <p>Price: {{products.price}}</p>
+        <p>125 Gb Rom</p>
+        <p>15.49 cm(6.1inch)</p>
+      </div>
+      <div *ngIf="ImageHover">
+        <img [src]="MainImage.url" >
+      </div>
+    </div>
+  </div>
+</div>

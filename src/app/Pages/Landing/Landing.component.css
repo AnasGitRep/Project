@@ -1,0 +1,59 @@
+
+.main{
+    
+    width: 100%;
+    height:100dvh;
+    
+background-color: rgb(233, 234, 235);
+}
+.header_1{
+    display: flex;
+    flex-direction: row;
+    
+    
+  }
+
+.header_1 img{
+    width: 90px;
+    height: 70px;
+
+}
+
+.header_1 span{
+    margin-left: 5%;
+}
+span p{
+    font-size: large;
+    font-weight:500;
+}
+
+#carouselExampleAutoplaying{
+    margin-top: 20px;
+
+}
+#carouselExampleAutoplaying img {
+    height: 300px;
+    
+}
+
+.products{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.products img{
+    width: 250px;
+    height: 250px;
+}
+.products .card{
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 270px;
+    
+}
+
+span:hover{
+    cursor: pointer;
+    zoom: 1;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page | CodingNepal</title>
+    
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>facebook</h1>
+          <p>Connect with friends and the world </p>
+          <p> around you on Facebook.</p>
+        </div>
+        <form action="#">
+          <div class="form_1">
+            <div>
+              <input [(ngModel)]="login.Email" type="email" placeholder="Email" required name="nam">
+              <input [(ngModel)]="login.Password" type="password" placeholder="Password" required name="nam">
+            </div>
+  
+            <div class="link">
+              <button (click)="Login()" type="submit"  class="login">Login</button>
+              <a href="#"  class="forgot">Forgot password?</a>
+            </div>
+            <hr>
+          </div>
+     
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul id="logo" class="navbar-nav me-auto mb-2 mb-lg-0">
+        <img height="50px" src="assets/logo/flipkart-logo.png">
+
+        <div class="search-container">
+          <button type="submit"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Search...">
+        </div>
+      </ul>
+
+      <!-- Example split danger button -->
+  
+        <div class="btn-group" style="margin-right: 3%;">
+  
+          <button routerLink="/Login" type="button" class="btn btn-primary ms-2">Login</button>
+          
+
+          <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+        <button routerLink="/Register" type="button" class="btn btn-secondary m-3">Register</button>
+        <div class="cart">
+          <i (click)="hello()" class="bi bi-cart3"></i>
+          <span>Products in Cart: {{count|async}}</span>
+         
+        </div>
+        <div>
+         <a routerLink="/AddProduct"><i style="font-size: 22px;cursor: pointer;color: green;" class="bi bi-plus-circle"></i></a> 
+          <span class="ms-2">AddProduct</span>
+        </div>
+        <div>
+          <a routerLink="/ListAdminProduct"><i style="font-size: 22px;cursor: pointer;color: green;" class="bi bi-plus-circle"></i></a> 
+           <span class="ms-2">ListProduct</span>
+         </div>
+      
+       
+    </div>
+  </div>
+</nav>

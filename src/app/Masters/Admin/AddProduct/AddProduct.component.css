@@ -1,0 +1,149 @@
+.container{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    max-width: 1000px;
+
+}
+
+.form_1{
+    padding: 20px;
+    max-width: 500px;
+}
+label{
+    margin-top: 10px;
+}
+input{
+
+}
+.form_2{
+    padding: 20px;
+}
+.form_2 header{
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.form_2 p{
+    margin-top: 5px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items do not wrap to next line */
+  }
+  .card-container .card {
+    margin-right: 10px; /* Adjust as needed */
+  }
+
+
+  
+
+
+  .select-container {
+    position: relative;
+  }
+  
+  .select-container select {
+    display: none;
+  }
+  
+  .icon-select.open select {
+    display: block;
+  }
+  
+
+  .icon-select {
+    position: relative;
+  }
+  
+  .select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 30px 10px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Adjust width as needed */
+  }
+  
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Style for icon */
+  .icon i {
+    color: #555;
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+
+
+  /* DropDwon with image.................................................. */
+
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown .dropbtn {
+    background-color: #fff;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  .dropdown-content a {
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .dropdown-content a:hover {
+    background-color: #f9f9f9;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .icon {
+    margin-left: 10px;
+  }
+  .icon img {
+    width: 20px;
+    height: 20px;
+  } */
+
+
+/* 
+  <div class="dropdown">
+  <button class="dropbtn">Select Category <span class="icon"><img src="icon.png" alt="Icon"></span></button>
+  <div class="dropdown-content">
+    <a href="#"><span class="icon"><img src="icon1.png" alt="Icon 1"></span> Category 1</a>
+    <a href="#"><span class="icon"><img src="icon2.png" alt="Icon 2"></span> Category 2</a>
+    <a href="#"><span class="icon"><img src="icon3.png" alt="Icon 3"></span> Category 3</a>
+    <!-- Add more categories as needed -->
+  </div>
+</div> */
+    /* DropDwon with image.................................................. */

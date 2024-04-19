@@ -1,0 +1,13 @@
+.card-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items do not wrap to next line */
+  }
+  .card-container .card {
+    margin-right: 10px; /* Adjust as needed */
+  }
+
+  .container{
+    padding: 20px;
+    width: 70%;
+    margin-top: 4rem;
+  }

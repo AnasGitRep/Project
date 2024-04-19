@@ -1,0 +1,33 @@
+
+<div class="card container">
+    <div *ngFor="let item of products">
+        <div class="card" style=" display:flex;flex-direction: row;justify-content: space-between;padding: 10px;margin: 5px;">
+            <div>
+                <p style="font-weight: bolder;font-size: larger;">{{item.name}}</p>
+                <p>{{item.description}}</p>
+                
+
+                <div class="card-container">
+                    <div  *ngFor="let image of item.images">
+                      <div>
+                        <img width="130" height="130" [src]="image.url">
+                        <div style="margin-left: 20px;">
+                            <button (click)="setMainImage(item, image)" class="btn btn-secondary">Main</button>
+                            <button (click)="DeleteImage(item.id)"  class="btn btn-danger ms-1">delete</button>
+                        </div>
+                      
+                      </div>
+                    </div>
+                </div>
+            </div>
+      
+            <div>
+            <p style="font-weight: bold;"> ${{item.price}}</p>
+            </div>
+        </div>
+        
+      
+    </div>
+</div>
+
+

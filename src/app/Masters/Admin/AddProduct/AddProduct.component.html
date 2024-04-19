@@ -1,0 +1,91 @@
+
+<div class="container card">
+  <div class="card form_1 col-6">
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="product.name" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <textarea class="form-control" id="description" name="description" [(ngModel)]="product.description" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" class="form-control" id="price" name="price" [(ngModel)]="product.price" required>
+      </div>
+      <label for="price">Category:</label>
+      <div class="icon-select mt-1">
+        <select name="name8" [(ngModel)]="product.categoryId" class="select" #categorySelect >
+          
+            <option>__select__</option>
+            <option  *ngFor="let item of Categories" [value]="item.id">{{item.name}}</option>
+          
+      
+        </select>
+        <span class="icon" (click)="toggleDropdown()">
+          <i class="fa fa-chevron-down"></i>
+        </span>
+      </div>
+
+      <label for="price">Brand:</label>
+      <div class="icon-select mt-1">
+        <select name="name8" [(ngModel)]="product.brandId" class="select" #categorySelect >
+          
+            <option>__select__</option>
+            <option  *ngFor="let item of Brands" [value]="item.id">{{item.name}}</option>
+          
+      
+        </select>
+        <span class="icon" (click)="toggleDropdown()">
+          <i class="fa fa-chevron-down"></i>
+        </span>
+      </div>
+
+      <label for="price">Type:</label>
+      <div class="icon-select mt-1">
+        <select name="name6" [(ngModel)]="product.typesId" class="select" #TypeSelect >
+          
+            <option>__select__</option>
+            <option  *ngFor="let item of Types" [value]="item.id">{{item.name}}</option>
+          
+      
+        </select>
+        <span class="icon" (click)="toggleDropdown()">
+          <i class="fa fa-chevron-down"></i>
+        </span>
+      </div>
+      
+      
+
+      <div class="form-group">
+        <label for="stockQuantity">Stock Quantity:</label>
+        <input type="number" class="form-control" id="stockQuantity" name="stockQuantity" [(ngModel)]="product.stockQuantity" required>
+      </div>
+      <div class="form-group">
+        <label for="images">Images:</label>
+        <input type="file" class="form-control" id="images" name="images" (change)="onFileChange($event)" multiple>
+      </div>
+      <button type="submit" class="btn btn-primary mt-4">Add Product</button>
+    </form>
+  </div>
+  
+  
+  <div class="col-5 card form_2">
+    <header>Product Details</header>
+    <hr>
+    <p  id="name" name="name">Name :{{product.name}}</p>
+    <p  id="name" name="name">price :{{product.price}}</p>
+    <p  id="name" name="name">stock :{{product.stockQuantity}}</p>
+    <p  id="name" name="name">Images :</p>
+
+    <div class="card-container">
+      <div class="card" *ngFor="let item of product.images">
+        <div>
+          <img width="100" height="100" [src]="item.url">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

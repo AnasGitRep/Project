@@ -1,0 +1,31 @@
+
+.main{
+    display: flex;
+    flex-direction: row;
+  
+    
+}
+
+.main_2{
+    border: 1px solid rgb(236, 234, 234);
+    
+}
+
+.main_3{
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+}
+
+.container{
+    margin-top: 40px;
+    overflow-x: hidden;
+    flex-wrap: wrap;
+}
+
+.main_2 img:hover{
+    border: 2px solid blue;
+}
+.main_2 img{
+    border: 1px solid rgb(189, 187, 187);
+}

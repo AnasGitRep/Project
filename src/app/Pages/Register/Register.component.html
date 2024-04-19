@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login Page | CodingNepal</title>
+    
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="facebook-page flex">
+        <div class="text">
+          <h1>facebook</h1>
+          <p>Connect with friends and the world </p>
+          <p> around you on Facebook.</p>
+        </div>
+        <form action="#">
+          <div class="form_2">
+            <div> 
+              <input *ngIf="SgowOtInput==false" [(ngModel)]="register.UserName" type="text" placeholder="UserName" required name="nam">
+              <input *ngIf="SgowOtInput==false" [(ngModel)]="register.Email" type="email" placeholder="Email" required name="nam">
+              <input *ngIf="SgowOtInput==false" [(ngModel)]="register.Mobail" type="text" placeholder="Phone number" required name="nam">
+              <input *ngIf="SgowOtInput==false" [(ngModel)]="register.Password" type="password" placeholder="Password" required name="nam">
+            </div>
+            <hr>
+            <div class="button">
+              <a (click)="CreateAccount()">register account</a>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
